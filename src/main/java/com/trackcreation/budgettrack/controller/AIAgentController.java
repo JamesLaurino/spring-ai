@@ -33,7 +33,7 @@ public class AIAgentController {
                 .user(query).call().content();
     }
 
-    // Asking with message system
+    // Asking with few shot prompt
     @GetMapping("/chat/system")
     public String askLLMSystemMessage(String query) {
         List<Message> exemple = List.of(
